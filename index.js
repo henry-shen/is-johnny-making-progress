@@ -18,7 +18,11 @@
 
 progressDays = (runs) => {
   // write your code HERE
-  
+  let count = 0;
+  for (let i = 1; i<runs.length; i++) {
+    if (runs[i] > runs [i-1]) count++;
+  }
+  return count;
 };
 
 module.exports = progressDays;
